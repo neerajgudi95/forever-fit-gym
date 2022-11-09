@@ -160,7 +160,7 @@ section h2 {
 }
 
 .services {
-    height: 50vh;
+    height: 60vh;
     padding: 20px 0;
 }
 
@@ -221,7 +221,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
-    height: 200px;
+    /* align-items: center; */
 }
 
 footer ul {
@@ -255,6 +255,7 @@ footer ul li a {
 .details {
     line-height: 25px;
     letter-spacing: 1px;
+    width: 300px;
 }
 
 .fa-location-dot {
@@ -276,6 +277,10 @@ footer ul li a {
         display: none;
         width: 100%;
         flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 
     nav ul.show {
@@ -312,6 +317,16 @@ footer ul li a {
 
     .service {
         margin: 10px;
+    }
+
+    footer {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .address {
+        margin-top: 10px;
     }
 
 }
