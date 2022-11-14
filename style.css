@@ -74,7 +74,7 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-image: url('assets/images/banner1.webp');
+    background-image: url('assets/images/banner.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -156,7 +156,7 @@ nav ul li a {
     text-align: justify;
     letter-spacing: 2px;
     line-height: 30px;
-    margin-top: 60px;
+    margin-top: 30px;
     padding: 10px;
 }
 
@@ -197,26 +197,48 @@ section h2 {
 
 .trainers,
 .gallery {
-    padding: 20px;
+    margin: 20px;
+    /* height: 50vh; */
 }
 
-.trainers-info,
-.gallery-info {
+.trainers-info {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 20px;
     flex-wrap: wrap;
+}
+
+.trainer {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    padding: 30px;
+    object-fit: contain;
+    margin: 20px 0;
+}
+
+.trainer img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.plans {
+    text-align: center;
+    /* margin-bottom: 30px; */
+    padding: 20px;
+    background-color: rgb(238, 237, 237);
+
 }
 
 .fees {
     margin: 30px 0;
 }
 
-.plans {
-    text-align: center;
-    margin-bottom: 30px;
+.fees h3 {
+    margin: 15px 0;
 }
 
 .plans-info {
@@ -242,7 +264,7 @@ section h2 {
 }
 
 .price {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 700;
 }
 
@@ -263,14 +285,6 @@ section h2 {
     font-weight: 600;
 }
 
-.trainer,
-.gallery-pic {
-    width: 200px;
-    height: 300px;
-    background-color: lightgrey;
-    border-radius: 10px;
-    margin: 10px;
-}
 
 /* FOOTER CSS */
 footer {
