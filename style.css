@@ -11,6 +11,10 @@ html {
     font-family: 'Barlow', sans-serif;
 }
 
+body {
+    min-width: 400px;
+}
+
 a {
     text-decoration: none;
 }
@@ -73,7 +77,7 @@ nav ul li a {
     background-image: url('assets/images/banner1.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top bottom;
+    background-position: center center;
 }
 
 .intro {
@@ -132,11 +136,12 @@ nav ul li a {
 
 .aboutUs-desc {
     flex: 0.5;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .aboutUs-img img {
     width: 100%;
+    height: 100%;
 }
 
 .aboutUs-desc h2 {
@@ -203,6 +208,59 @@ section h2 {
     flex-wrap: wrap;
     height: 100%;
     padding: 30px;
+}
+
+.fees {
+    margin: 30px 0;
+}
+
+.plans {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.plans-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.plan {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: white;
+    /* border: 1px solid rgb(180, 180, 180); */
+    height: 200px;
+    width: 250px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.duration {
+    font-size: 1.5rem;
+}
+
+.plans-terms {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.plans-terms p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .trainer,
@@ -317,6 +375,10 @@ footer ul li a {
 
     .service {
         margin: 10px;
+    }
+
+    .plan {
+        margin: 20px 0;
     }
 
     footer {
