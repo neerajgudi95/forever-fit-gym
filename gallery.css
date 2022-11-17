@@ -31,11 +31,8 @@ header {
     padding: 30px;
 }
 
-header h1 {
-    text-align: center;
-}
-
 header h2.title {
+    text-align: center;
     font-size: 3rem;
     font-weight: 700;
 }
@@ -114,7 +111,6 @@ footer>p {
 .details {
     line-height: 25px;
     letter-spacing: 1px;
-    width: 350px;
 }
 
 .fa-location-dot {
