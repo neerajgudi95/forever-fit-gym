@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;500;600;700;800;900&display=swap');
+
 :root {
     --white: #fff;
     --black: #111;
@@ -11,7 +13,7 @@
 }
 
 html {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Barlow', sans-serif;
 }
 
 img {
@@ -24,6 +26,8 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #000;
+    color: white;
 }
 
 header h2.title {
@@ -39,19 +43,19 @@ header h3.second-title {
 /* SECTION */
 section {
     text-align: center;
-    padding: 2rem 3%;
+    padding: 1%;
 }
 
-section img:not(:last-child) {
+.images img:not(:last-child) {
     margin-bottom: 1rem;
 }
 
-section img {
-    cursor: pointer;
+.images img {
+    /* cursor: pointer; */
     transition: opacity 400ms;
 }
 
-section img:hover {
+.images img:hover {
     opacity: 0.9;
 }
 
@@ -133,7 +137,7 @@ header h2.second-title {
     animation: rise 400ms backwards ease-out;
 }
 
-section img {
+.images img {
     animation: rise 400ms ease-out backwards;
     animation-play-state: paused;
     animation-delay: 300ms;
@@ -150,7 +154,7 @@ section img {
 /* Tablets */
 @media screen and (min-width: 480px) {
     section {
-        padding: 2rem 10% 10%;
+        padding: 1rem 10% 10%;
     }
 }
 
@@ -172,15 +176,15 @@ section img {
     }
 
     /*  SECTION */
-    section {
-        columns: 2;
+    section .images {
+        columns: 3;
         column-gap: 1rem;
-        padding: 2rem 10% 10%;
+        padding: 1rem 5% 5%;
     }
 }
 
 /* Desktop, large screens */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
 
     /* HEADER */
     header h1.title {
@@ -193,10 +197,10 @@ section img {
     }
 
     /*  SECTION */
-    section {
+    section .images {
         columns: 2;
         column-gap: 1rem;
-        padding: 2rem 10% 10%;
+        padding: 1rem 5% 5%;
     }
 
 

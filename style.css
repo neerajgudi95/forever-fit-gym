@@ -74,10 +74,10 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-image: url('assets/images/banner.webp');
+    background-image: url('assets/images/banner1.webp');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
 }
 
 .intro {
@@ -106,22 +106,16 @@ nav ul li a {
 .intro h1 {
     font-size: 4rem;
     font-weight: 900;
-    color: white;
-    width: 20ch;
+    color: rgb(220, 0, 0);
 }
 
 .intro p {
     font-size: 1.2rem;
-    color: white;
+    color: rgb(255, 255, 255);
     margin-top: 20px;
     font-weight: 100;
 }
 
-
-/* 
-.banner picture {
-    object-fit: contain;
-} */
 
 .aboutUs {
     display: flex;
@@ -156,17 +150,16 @@ nav ul li a {
     text-align: justify;
     letter-spacing: 2px;
     line-height: 30px;
-    margin-top: 30px;
+    margin: 30px;
     padding: 10px;
 }
 
-section h2 {
+section>h2 {
     text-align: center;
 }
 
 .services {
     height: 60vh;
-    padding: 20px 0;
 }
 
 .services-info {
@@ -177,11 +170,13 @@ section h2 {
     height: 100%;
 }
 
-.service {
+.service a {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-decoration: none;
+    color: #000;
 }
 
 .service img {
@@ -205,7 +200,7 @@ section h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -215,8 +210,13 @@ section h2 {
     align-items: center;
     justify-content: center;
     height: 100%;
+    flex-direction: column;
     object-fit: contain;
     margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #ddd;
 }
 
 .trainer img {
@@ -225,9 +225,17 @@ section h2 {
 
 }
 
+.trainer-detail {
+    text-align: center;
+}
+
+.trainer-name {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
 .plans {
     text-align: center;
-    padding: 30px;
     background-color: rgb(238, 237, 237);
 
 }
@@ -284,6 +292,16 @@ section h2 {
     font-weight: 600;
 }
 
+@keyframes rise {
+    from {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+
+section {
+    padding: 5% 0;
+}
 
 /* FOOTER CSS */
 footer {
@@ -389,15 +407,10 @@ footer p a:hover {
         align-items: center;
         justify-content: center;
         height: 100%;
-        flex-direction: column;
-        flex: 1;
+        width: 100%;
     }
 
-    .intro h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
+    .intro h1,
     .intro p {
         text-align: center;
     }
