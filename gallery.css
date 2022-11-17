@@ -31,6 +31,10 @@ header {
     padding: 30px;
 }
 
+header h1 {
+    text-align: center;
+}
+
 header h2.title {
     font-size: 3rem;
     font-weight: 700;
