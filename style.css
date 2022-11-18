@@ -190,11 +190,12 @@ section>h2 {
     margin-top: 10px;
 }
 
-.trainers,
-.gallery {
+.trainers {
     margin: 20px;
     /* height: 50vh; */
 }
+
+
 
 .trainers-info {
     display: flex;
@@ -206,6 +207,7 @@ section>h2 {
 
 .trainer {
     width: 300px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -216,7 +218,11 @@ section>h2 {
     border-radius: 8px;
     overflow: hidden;
     padding: 20px;
-    background-color: #ddd;
+    background-color: rgb(241, 241, 241);
+    animation: rise 400ms ease-out backwards;
+    animation-play-state: paused;
+    animation-delay: 300ms;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .trainer img {
@@ -230,8 +236,9 @@ section>h2 {
 }
 
 .trainer-name {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 5px 0;
+    font-weight: 600;
 }
 
 .plans {
@@ -295,7 +302,7 @@ section>h2 {
 @keyframes rise {
     from {
         opacity: 0;
-        transform: translateY(10%);
+        transform: translateY(15%);
     }
 }
 
