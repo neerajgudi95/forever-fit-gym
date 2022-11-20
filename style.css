@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&family=Nunito:wght@400;500;600;700;800;900&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -8,7 +10,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -152,6 +154,10 @@ nav ul li a {
     line-height: 30px;
     margin: 30px;
     padding: 10px;
+}
+
+.desc span {
+    font-weight: 600;
 }
 
 section>h2 {
@@ -392,11 +398,18 @@ footer p a:hover {
     nav ul {
         display: none;
         width: 100%;
-        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    nav ul li:not(:last-child) {
+        border-bottom: 1px solid gray;
     }
 
     nav ul li {
         margin: 10px 0;
+        padding-bottom: 5px;
+        width: 100%;
+        text-align: center;
     }
 
     nav ul.show {
